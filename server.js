@@ -1,5 +1,5 @@
 const app = require('./app'); 
-const logger = require('./utils/lib/logger').logger; 
+const logger = require('./lib/logger').logger; 
 
 const server = app.listen(app.get('port'), () => {
 	logger.info(`Server started on port ${app.get('port')}`);
